@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="mobile.css">
+
+     <!-- FONT-AWESOME -->
+     <script src="https://kit.fontawesome.com/d7220c63b0.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Alegreya+Sans&family=Almarai:wght@300&family=Alumni+Sans+Inline+One:ital@1&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Bree+Serif&family=Cabin&family=Concert+One&family=DM+Serif+Display&family=Dancing+Script&family=Fira+Sans&family=Hedvig+Letters+Sans&family=Josefin+Sans&family=Lato&family=Lobster&family=Manrope&family=Mukta&family=Overpass&family=PT+Sans&family=Pacifico&family=Patua+One&family=Poppins:ital,wght@0,400;1,700&family=Raleway:wght@400;500&family=Rethink+Sans&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;700&family=Satisfy&family=Shippori+Antique+B1&family=Signika&family=Tilt+Warp&family=Ubuntu&family=Urbanist&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav id="navbar">
+        <div id="logo">
+            <h2 class="h2-head">Mahesh Rayate</h2>
+        </div>
+
+        <ul class="navlinks">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Me</a></li>
+            <li class="item"><a href="#">My Work</a></li>
+            <li class="item"><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME-SECTION -->
+    <section id="home">
+
+        <div class="home-left">
+            <div>
+                <div id="inner-left">
+                    <h2 class="h2-head">Hello,</h2>
+                    <h1 class="h1-head">I'm Mahesh</h1>
+                </div>
+                <h1 class="h1-head">I'm a Web Developer</h1>
+                <!-- <button class="btn">Download CV</button> -->
+                <button class="btn"><a href="images/Mahesh Rayate_CV (2).pdf" download >Download CV</a></button>
+            </div>
+            
+        </div>
+
+        <div class="home-right">
+            <div>
+                <img src="images/profile.jpg" alt="profile" id="profileimg">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT-SECTION -->
+    <section id="about">
+        <div class="about-left">
+            <img src="images/passport.png" alt="passportimg">
+        </div>
+
+        <div class="about-right">
+            <h1 class="menuheading" id="menuhead1">About Me</h1>
+            <p class="aboutme"> I'm <b>Mahesh Rayate</b>, an Information Technology graduate, I'm well   equipped with the knowledge and skills needed to create dynamic and visually appealing web solutions.
+                I began journey in web development with a strong foundation in <b>HTML </b>, <b>CSS </b>,  <b>JavaScript </b>and <b>Bootstrap </b> allowing me to build responsive and captivating websites from the ground up.
+                I'm well-versed in <b>SQL</b>, enabling me to design robust, data-driven applications with secure and efficient databases. Additionally, I have experience with <b>MongoDB</b>, which allows me to work with unstructured data. I am committed to learn new skills and stay up-to-date with the latest industry trends.
+            </p>
+
+            <div class="academics">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+    
+                <div class="tab-contents active-tab" id='skills'>
+                    <ul>
+                        <li><span>Front-end Development</span><br>
+                        HTML, CSS, JS, Bootstrap</li>
+                        <li><span>Back-end Development</span><br>
+                        PHP, NodeJS</li>
+                        <li><span>Databse</span><br>
+                        MYSQL</li>
+                    </ul>
+                </div>
+    
+                <div class="tab-contents" id='experience'>
+                    <ul>
+                        <li><span>Front-end Development Intern</span><br>
+                        Company - Oasis Inbobyte Private Ltd <br>
+                        <i class="fa-regular fa-calendar-days"></i> Feb 2023 - Mar 2023 <br>
+                        Creating Responsive Landing Webpages using HTML, CSS, JavaScript and Bootstrap <br>
+                    </li>
+                        
+                    </ul>
+                </div>
+    
+                <div class="tab-contents" id='education'>
+                    <ul>
+                        <li><span>Bachelors Of Engineering</span><br>
+                        Sinhgad College Of Engineering</li> 
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="project">
+        <h1 class="menuheading">My Work</h1>
+        <div id="project-container">
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                <img src="images/portfolio .jpg" alt="portfolio.jpg">
+                <button class="btn">Visit Website</button>
+            </div>
+
+            <div class="project-item">
+                <h3>Amazon Clone</h3>
+                <img src="images/amazon.jpg" alt="amazon.jpg">
+                <button class="btn">Visit Website</button>
+            </div>
+
+            <div class="project-item">
+                <h3>TinDog Website</h3>
+                <img src="images/tindog.jpg" alt="tindog.jpg">
+                <button class="btn">Visit Website</button>
+            </div>
+
+            <div class="project-item">
+                <h3>Gym Landing Page</h3>
+                <img src="images/gym.jpg" alt="gym.jpg">
+                <button class="btn">Visit Website</button>
+            </div>
+
+            <div class="project-item">
+                <h3>School Landing Page</h3>
+                <img src="images/school.jpg" alt="school.jpg">
+                <button class="btn">Visit Website</button>
+            </div>
+
+            <div class="project-item">
+                <h3>Usability Hub</h3>
+                <img src="images/usability hub.jpg" alt="usability hub.jpg.jpg">
+                <button class="btn">Visit Website</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- CONTACT-SECTION -->
+    <section id="contact">
+
+        <div class="contact-left">
+            <h1 class="menuheading">Contact Me</h1>
+
+            <div class="phone-mail">
+
+                <div class="phone-mail-item">
+                    <h3><span class="span1"><i class="fa-solid fa-envelope" ></i></span>maheshrayate8742@gmail.com</h3>
+                </div>
+
+                <div class="phone-mail-item">
+                    <h3><span class="span1"><i class="fa-solid fa-mobile-screen-button" ></i></span>9307438889</h3>
+                </div>
+                
+            </div>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook icons"></i>
+                <i class="fa-brands fa-linkedin-in icons"></i>
+                <i class="fa-brands fa-github icons"></i>
+                <i class="fa-brands fa-instagram icons"></i>
+            </div>
+
+            <a href="images/Mahesh Rayate_CV (2).pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+
+            <form action="">
+                <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Msg" cols="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn" id="submit-btn">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer>
+        Copyright &copy; . All Rights Reserved Mahesh Rayate
+    </footer>
+
+
+    <script>
+
+        
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        
+    </script>
+    
+    
+</body>
+</html>
